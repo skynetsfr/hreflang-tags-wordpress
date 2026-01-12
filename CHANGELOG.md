@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.1] - 2026-01-12
+
+### Changed
+- Separated Blog/Home tab into two distinct tabs (Home and Blog)
+- Updated README content and credits link
+
+### Removed
+- Removed Updates & Licensing sidebar from all admin pages
+- Removed admin bar icon option and all related functionality
+- Removed license-related content from documentation
+
+### Added
+- New SECURITY.md file with vulnerability reporting guidelines
+- New tabs/home.php for static homepage hreflang settings
+- JavaScript handlers for home tag management
+
 ## [2.0.0] - 2026-01-12
 
 ### 🎉 Major Release - Community Edition

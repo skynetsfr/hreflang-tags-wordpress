@@ -3,7 +3,7 @@
 Plugin Name: Hreflang Tags WP
 Plugin URI: https://github.com/skynetsfr/hreflang-tags-wordpress
 Description: Smart implementation of HREFLANG meta tags into the head section of your WordPress site.
-Version: 2.0.0
+Version: 2.0.1
 Author: Skynets
 Author URI: https://github.com/skynetsfr
 License: GPLv2 or later
@@ -34,7 +34,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants
-define( 'HREFLANG_PRO_VERSION', '2.0.0' );
+define( 'HREFLANG_PRO_VERSION', '2.0.1' );
 define( 'HREFLANG_PRO_PLUGIN_FILE', __FILE__ );
 define( 'HREFLANG_PRO_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HREFLANG_PRO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ) ); // Backward compatibility
