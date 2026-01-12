@@ -1,0 +1,331 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HREFLANG Tags Pro\n"
+"POT-Creation-Date: 2017-04-15 22:05+0800\n"
+"PO-Revision-Date: 2017-04-15 22:11+0800\n"
+"Last-Translator: David Robert Davis, Jr <david.davis@dcgws.com>\n"
+"Language-Team: David Robert Davis, Jr <david.davis@dcgws.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: hreflang-tags-pro.php\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-bulk-list-table.php:142
+msgid "You are not allowed to access this page."
+msgstr "لا يسمح لك بالوصول إلى هذه الصفحة."
+
+#: includes/class-bulk-list-table.php:185
+msgid "Master Template"
+msgstr "قالب رئيسي"
+
+#: includes/class-bulk-list-table.php:186
+msgid ""
+"This is a very powerful tool which should only be used if you are certain of "
+"what you want to do. This can and will completely overwrrite your previous "
+"hreflang tags for these posts. Use extreme care when appyling and saving."
+msgstr ""
+"هذا هو أداة قوية جدا والتي ينبغي أن تستخدم إلا إذا كنت متأكدا من ما تريد "
+"القيام به. يمكن أن يؤدي هذا إلى استبدال علامات هريفلانغ السابقة لهذه "
+"المشاركات بشكل كامل. استخدام العناية القصوى عند أبيلينغ والادخار."
+
+#: includes/class-bulk-list-table.php:187
+msgid ""
+"You may use the template tag <code>{get_permalink}</code> for the "
+"Alternative URL to set a default for each page/post."
+msgstr ""
+"يمكنك استخدام علامة القالب <code>{get_permalink}</code> لعنوان ورل البديل "
+"لتعيين إعداد افتراضي لكل صفحة / مشاركة."
+
+#: includes/class-bulk-list-table.php:188
+msgid "Apply to All"
+msgstr "طبق للكل"
+
+#: includes/class-bulk-list-table.php:189
+msgid "Save All"
+msgstr "حفظ الكل"
+
+#: includes/class-bulk-list-table.php:190
+msgid "Delete All"
+msgstr "حذف الكل"
+
+#: includes/class-bulk-list-table.php:193
+#: includes/class-bulk-list-table.php:788
+#: includes/class-bulk-list-table.php:808 includes/functions.php:232
+#: includes/functions.php:254 includes/functions.php:292
+#: includes/functions.php:329 includes/functions.php:351
+#: includes/functions.php:417 includes/functions.php:447
+#: includes/functions.php:463
+msgid "Alternative URL"
+msgstr "عنوان ورل البديل"
+
+#: includes/class-bulk-list-table.php:195
+#: includes/class-bulk-list-table.php:790
+#: includes/class-bulk-list-table.php:810 includes/functions.php:234
+#: includes/functions.php:256 includes/functions.php:294
+#: includes/functions.php:331 includes/functions.php:353
+#: includes/functions.php:419 includes/functions.php:449
+#: includes/functions.php:465
+msgid "Language"
+msgstr "اللغة"
+
+#: includes/class-bulk-list-table.php:363
+#, php-format
+msgctxt "posts"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "مزعج <span class=\"%s\">%s</span>"
+msgstr[1] "مزعج <span class=\"%s\">%s</span>"
+msgstr[2] "مزعج <span class=\"%s\">%s</span>"
+msgstr[3] "مزعج <span class=\"%s\">%s</span>"
+msgstr[4] "مزعج <span class=\"%s\">%s</span>"
+msgstr[5] "مزعج <span class=\"%s\">%s</span>"
+
+#: includes/class-bulk-list-table.php:406
+#, php-format
+msgctxt "posts"
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "المهملات <span class=\"count\">(٪ s)</span>"
+msgstr[1] "المهملات <span class=\"count\">(٪ s)</span>"
+msgstr[2] "المهملات <span class=\"count\">(٪ s)</span>"
+msgstr[3] "المهملات <span class=\"count\">(٪ s)</span>"
+msgstr[4] "المهملات <span class=\"count\">(٪ s)</span>"
+msgstr[5] "المهملات <span class=\"count\">(٪ s)</span>"
+
+#: includes/class-bulk-list-table.php:456
+msgid "Filter"
+msgstr "تصفية"
+
+#: includes/class-bulk-list-table.php:875
+msgid "Edit this item"
+msgstr "تحرير عنصر القائمة"
+
+#: includes/class-bulk-list-table.php:875
+msgid "Edit"
+msgstr "تعديل"
+
+#: includes/class-bulk-list-table.php:881
+#, php-format
+msgid "Preview &#8220;%s&#8221;"
+msgstr "مشاهدة  &#8220;%s&#8221;"
+
+#: includes/class-bulk-list-table.php:881
+msgid "Preview"
+msgstr "معاينة"
+
+#: includes/class-bulk-list-table.php:885
+#, php-format
+msgid "View &#8220;%s&#8221;"
+msgstr "عرض &#8220;%s&#8221;"
+
+#: includes/class-bulk-list-table.php:885
+msgid "View"
+msgstr "عرض"
+
+#: includes/class-bulk-list-table.php:1047
+msgid "WP Page Title"
+msgstr "عنوان الصفحة"
+
+#: includes/class-bulk-list-table.php:1048
+msgid "Post Type"
+msgstr "نوع آخر"
+
+#: includes/class-bulk-list-table.php:1049
+msgid "Post Status"
+msgstr "حالة المنشور"
+
+#: includes/class-bulk-list-table.php:1050
+msgid "Publication date"
+msgstr "تاريخ النشر:"
+
+#: includes/class-bulk-list-table.php:1051
+msgid "Page URL/Slug"
+msgstr "الصفحة URL / سبيكة"
+
+#: includes/class-bulk-list-table.php:1056
+msgid "Action"
+msgstr "اجراء"
+
+#: includes/functions.php:206
+msgid "HTML Tag Language"
+msgstr "لغة لغة هتمل"
+
+#: includes/functions.php:208 includes/functions.php:236
+#: includes/functions.php:258 includes/functions.php:296
+#: includes/functions.php:333 includes/functions.php:355
+#: includes/functions.php:421 includes/functions.php:451
+#: includes/functions.php:467
+msgid "Select one"
+msgstr "اختار قسم"
+
+#: includes/functions.php:217
+msgid ""
+"You can use this to set the &lt;html lang=\"\"&gt; attribute for improved "
+"SEO."
+msgstr ""
+"يمكنك استخدام هذا الإعداد لتعيين السمة <هتمل لانغ = \"\"> لتحسين تحسين "
+"محركات البحث."
+
+#: includes/functions.php:276
+msgid "Validate"
+msgstr "تحقق من الصحة"
+
+#: includes/functions.php:290 includes/functions.php:317 panels/main.php:22
+msgid "HREFLANG Tags"
+msgstr "هريفلانغ الكلمات"
+
+#: includes/functions.php:434
+msgid "Generate Tags"
+msgstr "إنشاء العلامات"
+
+#: includes/functions.php:910
+msgid "Your HREFLANG Tags found on this post are not valid."
+msgstr "هريفلانغ الكلمات الموجودة في هذا المنصب غير صالحة."
+
+#: includes/functions.php:914
+msgid "Your HREFLANG Tags found on this post are valid."
+msgstr "هريفلانغ الكلمات الموجودة في هذا المنصب صالحة."
+
+#: includes/functions.php:920
+msgid "No HREFLANG Tags found on this post."
+msgstr "لا هريفلانغ الكلمات الموجودة في هذا المنصب."
+
+#. Plugin Name of the plugin/theme
+#: includes/functions.php:923
+msgid "HREFLANG Tags Pro"
+msgstr "هريفلانغ الكلمات برو"
+
+#: panels/main.php:50
+msgid "Dashboard"
+msgstr "لوحة العرض"
+
+#: panels/main.php:51
+msgid "Blog/Home"
+msgstr "بلوق / الصفحة الرئيسية"
+
+#: panels/main.php:52
+msgid "Generator"
+msgstr "المولد"
+
+#: panels/main.php:53
+msgid "Bulk Editor"
+msgstr "محرر ضخم"
+
+#: panels/main.php:98
+msgid "Updates &amp; Licensing"
+msgstr "التحديثات والترخيص"
+
+#: tabs/blog.php:3
+msgid "Blog Settings"
+msgstr "اعدادات المدونة"
+
+#: tabs/blog.php:7
+msgid ""
+"These is where you can set your hreflang tags for your blog page. This is "
+"the page where your posts are show in a list. For many, it is the homepage. "
+"For those with a static frontpage, it might be somewhere else."
+msgstr ""
+"هذه هي المكان الذي يمكنك من خلاله تعيين علامات هريفلانغ لصفحة مدونتك. هذه هي "
+"الصفحة التي تظهر فيها مشاركاتك في قائمة. بالنسبة للكثيرين، هو الصفحة "
+"الرئيسية. بالنسبة لأولئك الذين لديهم صفحة أمامية ثابتة، قد يكون في مكان آخر."
+
+#: tabs/blog.php:10
+msgid "Here is the location of your blog page:"
+msgstr "في ما يلي موقع صفحة المدونة:"
+
+#: tabs/blog.php:19
+msgid "Allow Blog Page Tags"
+msgstr "السماح بعلامات صفحة المدونة"
+
+#: tabs/blog.php:24
+msgid "Enable hreflang tags on blog page."
+msgstr "تمكين علامات هريفلانغ على صفحة المدونة."
+
+#: tabs/blog.php:29
+msgid "Blog HREFLANG Tags"
+msgstr "بلوق هريفلانغ الكلمات"
+
+#: tabs/bulk_editor.php:2
+msgid "HREFLANG Tag Bulk Editor"
+msgstr "هريفلانغ العلامة السائبة المحرر"
+
+#: tabs/dashboard.php:16
+msgid "License Key"
+msgstr "مفاتح الرخصة"
+
+#: tabs/dashboard.php:22
+msgid "Valid Key : Your license key has been successfully validated."
+msgstr "مفتاح صالح: تم التحقق من مفتاح الترخيص بنجاح."
+
+#: tabs/dashboard.php:26
+msgid ""
+"Invalid or Expired Key : Please make sure you have entered the correct value "
+"and that your key is not expired."
+msgstr ""
+"مفتاح غير صالح أو منتهي الصلاحية: الرجاء التأكد من إدخال القيمة الصحيحة "
+"والتأكد من صلاحية المفتاح الخاص بك."
+
+#: tabs/dashboard.php:30
+msgid "The license key is used for access to premium features and support."
+msgstr "يتم استخدام مفتاح الترخيص للوصول إلى الميزات المميزة والدعم."
+
+#: tabs/dashboard.php:35
+msgid "License Email Address"
+msgstr "عنوان البريد الإلكتروني للرخصة"
+
+#: tabs/dashboard.php:43
+msgid "Content Types"
+msgstr "انواع المحتوى"
+
+#: tabs/dashboard.php:75
+msgid ""
+"These are the types of content that you want to set HREFLANG Tags metaboxes "
+"for."
+msgstr "هذه هي أنواع المحتوى الذي تريد تعيين هريفلانغ الكلمات ميتابوكسيس ل."
+
+#: tabs/dashboard.php:80
+msgid "Admin Bar Icon"
+msgstr "شريط الإدارة العلوي"
+
+#: tabs/dashboard.php:83
+msgid "Enable the admin bar icon."
+msgstr "تمكين رمز شريط المشرف."
+
+#: tabs/dashboard.php:83
+msgid "Recommended"
+msgstr "موصي به"
+
+#: tabs/generator.php:2
+msgid "HREFLANG Tag Generator for HTML sites"
+msgstr "هريفلانغ مولد العلامة لمواقع هتمل"
+
+#. Plugin URI of the plugin/theme
+msgid "http://dcgws.com/product/hreflang-tags-pro-plugin-wordpress/"
+msgstr "http://dcgws.com/product/hreflang-tags-pro-plugin-wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Smart implementation of HREFLANG meta tags into the head section of your "
+"WordPress site."
+msgstr ""
+"التنفيذ الذكي للعلامات الوصفية هريفلانغ في قسم الرأس من موقع ووردبريس الخاص "
+"بك."
+
+#. Author of the plugin/theme
+msgid "DCGWS Internet Solutions"
+msgstr "دغوس حلول الإنترنت"
+
+#. Author URI of the plugin/theme
+msgid "http://dcgws.com"
+msgstr "http://dcgws.com"

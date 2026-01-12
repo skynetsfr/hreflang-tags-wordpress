@@ -1,0 +1,584 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HREFLANG Tags Pro\n"
+"POT-Creation-Date: 2018-03-25 19:00+0800\n"
+"PO-Revision-Date: 2018-03-25 19:08+0800\n"
+"Last-Translator: David Robert Davis, Jr <david.davis@dcgws.com>\n"
+"Language-Team: David Robert Davis, Jr <david.davis@dcgws.com>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: hreflang-tags-pro.php\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-bulk-list-table.php:142
+#: includes/class-validator-table.php:142
+msgid "You are not allowed to access this page."
+msgstr "Není vám dovoleno vstoupit na tuto stránku."
+
+#: includes/class-bulk-list-table.php:185
+msgid "Master Template"
+msgstr "Hlavní šablona"
+
+#: includes/class-bulk-list-table.php:186
+msgid ""
+"This is a very powerful tool which should only be used if you are certain of "
+"what you want to do. This can and will completely overwrrite your previous "
+"hreflang tags for these posts. Use extreme care when appyling and saving."
+msgstr ""
+"Jedná se o velmi mocný nástroj, který by měl být použit pouze tehdy, pokud "
+"jste si jisti, co chcete dělat. To může a bude zcela overwrrite své "
+"předchozí značky hreflang na tato místa. Dbejte maximální opatrnosti při "
+"appyling a uložení."
+
+#: includes/class-bulk-list-table.php:187
+msgid ""
+"You may use the template tag <code>{get_permalink}</code> for the "
+"Alternative URL to set a default for each page/post."
+msgstr ""
+"Můžete použít šablony značky <code>{get_permalink}</code> pro alternativní "
+"URL nastavit výchozí nastavení pro každou stránku/post."
+
+#: includes/class-bulk-list-table.php:188
+msgid ""
+"You may also use the following template tags <code>{scheme},{host},{slug}</"
+"code> for the Alternative URL to set a default for each page/post. I.e. If "
+"you enter in the master template box the following: <br><code>{scheme}://"
+"{host}/es{slug}</code> then <code>http://www.example.com/cars</code> becomes "
+"<code>http://www.example.com/es/cars</code>. These options cannot be used "
+"with <code>{get_permalink}</code>, rather the template tag used refers to "
+"the URL permalink's component.<br><br><p>Notes:</p><ul><li><code>{slug}</"
+"code> will always contain the beginning and trailing slashes.</"
+"li><li><code>{host}</code> Never contains a trailing slash, but alwsys "
+"contains the current domain name and top-level domain, like .com, .org, .es, "
+"etc. If you want to reference a different domain or tld, you must manually "
+"enter it. I.e. If your default site is <code>http://example.com/cars</code> "
+"and your Spanish site is <code>http://ejemplo.es/cars</code>, then you would "
+"enter: <code>{scheme}://ejemplo.es{slug}</code></li><li><code>{scheme}</"
+"code> If you do not add a scheme, we will add <code>http</code> as the "
+"default value.</li></ul><br><br><strong>CAUTION: Please use these tags "
+"carefully, as they will replace your existing alternative URLs. You can set "
+"the Screen Options to 1 in order to test your settings without changing "
+"multiple posts/pages.</strong>"
+msgstr ""
+"Můžete také použít následující značky šablon <code> {scheme}, {host}, {slug} "
+"</ code> pro Alternativní URL a nastavit výchozí pro každou stránku / "
+"příspěvek. Tj. Pokud do pole hlavní šablony zadáte následující: <code> "
+"{scheme}: // {host} / es {slug} </ code> pak <code> http://www.example.com/"
+"cars </ code> se stává <code> http://www.example.com/es/cars </ code>. Tyto "
+"volby nelze použít s <code> {get_permalink} </ code>, spíše použitá šablona "
+"tagu odkazuje na komponentu URL permalink. <br> <br> <p> Poznámky: </ p> "
+"<ul> <li> <code> {slug} </ code> bude vždy obsahovat počáteční a koncové "
+"lomítky. </ li> <li> <code> {host} </ code> Nikdy neobsahuje zadní lomítko, "
+"ale alwsys obsahuje aktuální název domény doména nejvyšší úrovně, jako jsou ."
+"com, .org, .es atd. Chcete-li odkazovat na jinou doménu nebo doménu, musíte "
+"ji ručně zadat. Tj. Pokud je výchozí web <code> http://example.com/cars </ "
+"code> a váš španělský web je <code> http://ejemplo.es/cars </ code>, pak "
+"byste zadali: <code > {scheme}: //ejemplo.es {slug} </ code> </ li> <li> "
+"<code> {scheme} </ code> Pokud přidáte schéma, / code> jako výchozí hodnotu. "
+"</ li> </ ul> <br> <br> <strong> UPOZORNĚNÍ: Používejte tyto značky pečlivě, "
+"protože nahradí stávající alternativní adresy URL. Možnosti obrazovky můžete "
+"nastavit na hodnotu 1, abyste mohli otestovat nastavení bez změny více "
+"příspěvků / stránek. </ Strong>"
+
+#: includes/class-bulk-list-table.php:189
+msgid "Apply to All"
+msgstr "Platí pro všechny"
+
+#: includes/class-bulk-list-table.php:190
+msgid "Save All"
+msgstr "Uložit vše"
+
+#: includes/class-bulk-list-table.php:191
+msgid "Delete All"
+msgstr "Odstranit vše (Delete All)"
+
+#: includes/class-bulk-list-table.php:194
+#: includes/class-bulk-list-table.php:790
+#: includes/class-bulk-list-table.php:810
+#: includes/class-validator-table.php:856 includes/functions.php:302
+#: includes/functions.php:323 includes/functions.php:361
+#: includes/functions.php:398 includes/functions.php:423
+#: includes/functions.php:489 includes/functions.php:519
+#: includes/functions.php:535 includes/functions.php:564
+#: includes/functions.php:580
+msgid "Alternative URL"
+msgstr "Alternativní adresa URL"
+
+#: includes/class-bulk-list-table.php:196
+#: includes/class-bulk-list-table.php:792
+#: includes/class-bulk-list-table.php:812
+#: includes/class-validator-table.php:857 includes/functions.php:304
+#: includes/functions.php:325 includes/functions.php:363
+#: includes/functions.php:400 includes/functions.php:425
+#: includes/functions.php:491 includes/functions.php:521
+#: includes/functions.php:537 includes/functions.php:566
+#: includes/functions.php:582
+msgid "Language"
+msgstr "Jazyk"
+
+#: includes/class-bulk-list-table.php:364
+#: includes/class-validator-table.php:367
+#, php-format
+msgctxt "posts"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Všechny <span class=\\”count\\”>(%s)</span>"
+msgstr[1] "Všechny <span class=\\”count\\”>(%s)</span>"
+msgstr[2] "Všechny <span class=\\”count\\”>(%s)</span>"
+
+#: includes/class-bulk-list-table.php:407
+#: includes/class-validator-table.php:410
+#, php-format
+msgctxt "posts"
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "Koš <span class=\"count\">(%s)</span>"
+msgstr[1] "Koš <span class=\"count\">(%s)</span>"
+msgstr[2] "Koš <span class=\"count\">(%s)</span>"
+
+#: includes/class-bulk-list-table.php:457
+#: includes/class-validator-table.php:460
+msgid "Filter"
+msgstr "Filtr"
+
+#: includes/class-bulk-list-table.php:877
+#: includes/class-validator-table.php:924
+msgid "Edit this item"
+msgstr "Upravit tuto položku"
+
+#: includes/class-bulk-list-table.php:877
+#: includes/class-validator-table.php:924
+msgid "Edit"
+msgstr "Upravit"
+
+#: includes/class-bulk-list-table.php:883
+#: includes/class-validator-table.php:930
+#, php-format
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Náhled &#8220;%s&#8221;"
+
+#: includes/class-bulk-list-table.php:883
+#: includes/class-validator-table.php:930
+msgid "Preview"
+msgstr "Náhled"
+
+#: includes/class-bulk-list-table.php:887
+#: includes/class-validator-table.php:934
+#, php-format
+msgid "View &#8220;%s&#8221;"
+msgstr "Zobrazit &#8220;%s&#8221;"
+
+#: includes/class-bulk-list-table.php:887
+#: includes/class-validator-table.php:934
+msgid "View"
+msgstr "Zobrazit"
+
+#: includes/class-bulk-list-table.php:1049
+#: includes/class-validator-table.php:1096
+msgid "WP Page Title"
+msgstr "Titulek stránky"
+
+#: includes/class-bulk-list-table.php:1050
+#: includes/class-validator-table.php:1097
+msgid "Post Type"
+msgstr "Typ záznamu"
+
+#: includes/class-bulk-list-table.php:1051
+#: includes/class-validator-table.php:1098
+msgid "Post Status"
+msgstr "Stav příspěvku"
+
+#: includes/class-bulk-list-table.php:1052
+#: includes/class-validator-table.php:1099
+msgid "Publication date"
+msgstr "Datum publikace"
+
+#: includes/class-bulk-list-table.php:1053
+#: includes/class-validator-table.php:1100
+msgid "Page URL/Slug"
+msgstr "Stránky URL/popisu"
+
+#: includes/class-bulk-list-table.php:1058
+msgid "Action"
+msgstr "Akce"
+
+#: includes/class-validator-table.php:185
+msgid "Validation Guide"
+msgstr "Ověřit"
+
+#: includes/class-validator-table.php:186
+msgid "Error Messages Legend"
+msgstr "Chybová hlášení"
+
+#: includes/class-validator-table.php:188
+msgid "The required DOMDocument class is not available on this server."
+msgstr "Požadovaná třída DOMDocument není k dispozici na tomto serveru."
+
+#: includes/class-validator-table.php:189
+msgid ""
+"Problem: Unfortunately, your server does not have the correct PHP modules to "
+"take advantage of our validation tool."
+msgstr ""
+"Problém: Bohužel váš server nemá správné moduly PHP, které by využily našeho "
+"validačního nástroje."
+
+#: includes/class-validator-table.php:190
+msgid ""
+"Possible Solution: Contact your hosting company and ask them to compile PHP "
+"with the DOM extension enabled."
+msgstr ""
+"Možné řešení: Obraťte se na vaši hostitelskou společnost a požádejte je o "
+"kompilaci PHP s povoleným rozšířením DOM."
+
+#: includes/class-validator-table.php:192
+msgid "Problem: The Alternative URL cannot be found as indicated."
+msgstr ""
+"Problém: Alternativní adresa URL nemůže být nalezena tak, jak je uvedeno."
+
+#: includes/class-validator-table.php:193
+msgid ""
+"Possible Solution: Please correct any typos and double check that your "
+"alternative url exists and is not set to Draft or Private."
+msgstr ""
+"Možné řešení: Upravte prosím všechny překlepy a zkontrolujte, zda existuje "
+"alternativní adresa URL, která není nastavena jako Koncept nebo Soukromá."
+
+#: includes/class-validator-table.php:195
+msgid ""
+"Problem: The Alternative URL entered is no the final destination of the "
+"page. It is redirecting to another page."
+msgstr ""
+"Problém: Zadaná alternativní adresa URL není konečným cílem stránky. "
+"Přesměruje se na jinou stránku."
+
+#: includes/class-validator-table.php:196
+msgid ""
+"Possible Solution: Please correct any typos and double check that your "
+"alternative is not set to redirect. Even a redirect of non-www to www can "
+"cause this error to appear."
+msgstr ""
+"Možné řešení: Opravte prosím jakýkoli výpis a zkontrolujte, zda není vaše "
+"alternativa nastavena na přesměrování. Dokonce i přesměrování non-www na www "
+"může způsobit tuto chybu se zobrazí."
+
+#: includes/class-validator-table.php:198
+msgid ""
+"Problem: This happens when a page includes a hreflang link to an alternate "
+"language, but the linked page doesn't link back to it."
+msgstr ""
+"Problém: Stane se to, když stránka obsahuje odkaz hreflang na jiný jazyk, "
+"ale odkazovaná stránka se k němu nevrací."
+
+#: includes/class-validator-table.php:198
+msgid ""
+"This <a target=\"_blank\" href=\"https://webmasters.googleblog.com/2014/07/"
+"troubleshooting-hreflang-annotations-in.html\">Official Google Webmaster "
+"Central Blog</a> post explains that:<br><code>Annotations must be confirmed "
+"from the pages they are pointing to. If page A links to page B, page B must "
+"link back to page A, otherwise the annotations may not be interpreted "
+"correctly."
+msgstr ""
+"Tento <a target=\"_blank\" href=\"https://webmasters.googleblog.com/2014/07/"
+"troubleshooting-hreflang-annotations-in.html\"> oficiální blog Central "
+"Central Google </a> vysvětluje, že: < -> Anotace musí být potvrzeny ze "
+"stránek, na které směřují. Pokud stránka A odkazuje na stránku B, musí být "
+"stránka B propojena zpět na stránku A, jinak se poznámky nemusí "
+"interpretovat správně."
+
+#: includes/class-validator-table.php:199
+msgid ""
+"Possible Solution: So if you have this error reported, you should edit the "
+"Alternative URL entry to ensure there's a hreflang link back to the matching "
+"originating URL."
+msgstr ""
+"Možné řešení: Pokud jste ohlášili tuto chybu, měli byste upravit položku "
+"Alternativní adresa URL a ujistit se, že existuje odkaz hreflang zpět na "
+"odpovídající původní URL."
+
+#: includes/class-validator-table.php:201
+msgid ""
+"Problem: This happens when a page includes a hreflang link to an alternate "
+"language, but the linked page doesn't contain any hreflang anotations."
+msgstr ""
+"Problém: Stane se tak, když stránka obsahuje odkaz hreflang na jiný jazyk, "
+"ale odkazovaná stránka neobsahuje žádné hreflangové anotace."
+
+#: includes/class-validator-table.php:202
+msgid ""
+"Possible Solution: So if you have this error reported, you should ensure "
+"that the pages referenced in the Alternative URL also contain hreflang tags."
+msgstr ""
+"Možné řešení: Pokud jste ohlásili tuto chybu, měli byste se ujistit, že "
+"stránky uvedené v alternativní adrese URL obsahují také značky hreflang."
+
+#: includes/class-validator-table.php:204
+msgid ""
+"If you have ensured that your hreflang tags are set up correctly and you are "
+"still receiving errors when trying to validate, please email us at <a href="
+"\"mailto:sales@dcgws.com\">sales@dcgws.com</a> or fill out the contact form "
+"<a target=\"_blank\" href=\"http://dcgws.com/contact/\">here</a> with "
+"details of the issues you are having."
+msgstr ""
+"Pokud jste se ujistili, že vaše značky hreflang jsou nastaveny správně a "
+"stále se při pokusu o ověření stále vyskytují chyby, pošlete nám e-mail na "
+"adresu <a href=\"mailto:sales@dcgws.com\"> sales@dcgws.com </a> nebo vyplňte "
+"kontaktní formulář <a target=\"_blank\" href=\"http://dcgws.com/contact/\"> "
+"zde </a> s podrobnostmi o problémech, které máte."
+
+#: includes/class-validator-table.php:205
+msgid ""
+"If you need assistance setting up the hreflang tags on your site, you may "
+"purchase a few hours of assistance <a target=\"_blank\" href=\"http://dcgws."
+"com/product/hourly-rate-work/\">here</a>. Most sites can be set up by us in "
+"2 hours or less."
+msgstr ""
+"Pokud potřebujete pomoc s nastavením značek hreflang na vašem webu, můžete "
+"si zakoupit několik hodin podpory <a target=\"_blank\" href=\"http://dcgws."
+"com/product/hourly-rate-work/\"> zde </a>. Většina webových stránek může být "
+"nastavena u nás za 2 hodiny nebo méně"
+
+#: includes/class-validator-table.php:206
+msgid ""
+"Note: While you are allowed to set Screen Options to any many pages per "
+"screen as you want, we do not recommend that you set them for more than 20 "
+"pages per screen. The functions used by this Validation tool are known to "
+"comsume a significant amount of PHP memory."
+msgstr ""
+"Poznámka: Zatímco máte povoleno nastavit možnosti obrazovky na libovolné "
+"množství stránek na obrazovku, nedoporučujeme je nastavit na více než 20 "
+"stran na obrazovku. Funkce používané tímto ověřovacím nástrojem jsou známy "
+"tím, že vytvářejí značné množství paměti PHP."
+
+#: includes/class-validator-table.php:858
+msgid "Validation Results"
+msgstr "Validace výsledků"
+
+#: includes/functions.php:276
+msgid "HTML Tag Language"
+msgstr "Značky HTML jazyk"
+
+#: includes/functions.php:278 includes/functions.php:306
+#: includes/functions.php:327 includes/functions.php:365
+#: includes/functions.php:402 includes/functions.php:427
+#: includes/functions.php:493 includes/functions.php:523
+#: includes/functions.php:539 includes/functions.php:568
+#: includes/functions.php:584
+msgid "Select one"
+msgstr "Vybrat jedno"
+
+#: includes/functions.php:287
+msgid ""
+"You can use this to set the &lt;html lang=\"\"&gt; attribute for improved "
+"SEO."
+msgstr ""
+"Můžete použít toto nastavení < html lang = \"\" > atribut pro lepší SEO."
+
+#: includes/functions.php:345
+msgid "Validate"
+msgstr "Ověřit"
+
+#: includes/functions.php:359 includes/functions.php:386 panels/main.php:22
+#: screens/bulk-editor.php:18 screens/generator.php:18 screens/validator.php:18
+msgid "HREFLANG Tags"
+msgstr "Značky HREFLANG"
+
+#: includes/functions.php:506
+msgid "Generate Tags"
+msgstr "Generovat značky"
+
+#: includes/functions.php:1054
+msgid "Your HREFLANG Tags found on this post are not valid."
+msgstr "Vaše značky hreflang nalezených na tento post nejsou platné."
+
+#: includes/functions.php:1058
+msgid "Your HREFLANG Tags found on this post are valid."
+msgstr "Vaše značky hreflang nalezených na tento post jsou platné."
+
+#: includes/functions.php:1064
+msgid "No HREFLANG Tags found on this post."
+msgstr "Žádné značky hreflang naleznete na tento post."
+
+#. Plugin Name of the plugin/theme
+#: includes/functions.php:1067
+msgid "HREFLANG Tags Pro"
+msgstr "HREFLANG Tagy Pro"
+
+#: panels/main.php:27
+msgid "General Settings"
+msgstr "Obecné nastavení"
+
+#: panels/main.php:51
+msgid "Dashboard"
+msgstr "Přehled"
+
+#: panels/main.php:52
+msgid "Blog/Home"
+msgstr "Úvodní stránka blogu"
+
+#: panels/main.php:54
+msgid "WooCommerce/Shop"
+msgstr "woocommerce"
+
+#: panels/main.php:91 screens/bulk-editor.php:54 screens/generator.php:50
+#: screens/validator.php:54
+msgid "Updates &amp; Licensing"
+msgstr "Aktualizace a licencování"
+
+#: screens/bulk-editor.php:23
+#| msgid "HREFLANG Tag Bulk Editor"
+msgid "HREFLANG Tags Bulk Editor"
+msgstr "HREFLANG Tags Bulk Editor"
+
+#: screens/generator.php:23
+msgid "HREFLANG Tag Generator for HTML sites"
+msgstr "Generátor značky HREFLANG pro HTML stránky"
+
+#: screens/validator.php:23
+#| msgid "HREFLANG Tag Bulk Editor"
+msgid "HREFLANG Tags Validator"
+msgstr "HREFLANG Tags Validator"
+
+#: tabs/blog.php:3
+msgid "Blog Settings"
+msgstr "Nastavení blogu"
+
+#: tabs/blog.php:7
+msgid ""
+"These is where you can set your hreflang tags for your blog page. This is "
+"the page where your posts are show in a list. For many, it is the homepage. "
+"For those with a static frontpage, it might be somewhere else."
+msgstr ""
+"Ty je místo, kde si můžete nastavit své značky hreflang pro váš blog "
+"stránce. Jedná se o stránky, kde se vaše příspěvky jsou výstava v seznamu. "
+"Pro mnohé je to homepage. Pro ty, kteří se statickou titulní strany, mohlo "
+"by to být někde jinde."
+
+#: tabs/blog.php:10
+msgid "Here is the location of your blog page:"
+msgstr "Zde je umístění stránky blogu:"
+
+#: tabs/blog.php:19
+msgid "Allow Blog Page Tags"
+msgstr "Dovolit stránky blogu tagy"
+
+#: tabs/blog.php:24
+msgid "Enable hreflang tags on blog page."
+msgstr "Povolit značky hreflang na blogu stránce."
+
+#: tabs/blog.php:29
+msgid "Blog HREFLANG Tags"
+msgstr "Blog značky hreflang"
+
+#: tabs/dashboard.php:16
+msgid "License Key"
+msgstr "Licenční klíč"
+
+#: tabs/dashboard.php:22
+msgid "Valid Key : Your license key has been successfully validated."
+msgstr "Platný klíč: Váš licenční klíč byl úspěšně ověřen."
+
+#: tabs/dashboard.php:26
+msgid ""
+"Invalid or Expired Key : Please make sure you have entered the correct value "
+"and that your key is not expired."
+msgstr ""
+"Neplatný nebo vypršela platnost klíče: Zkontrolujte, zda jste zadali správné "
+"hodnoty a nevypršela váš klíč."
+
+#: tabs/dashboard.php:30
+msgid "The license key is used for access to premium features and support."
+msgstr ""
+"Licenční klíč se používá pro přístup k nadstandardním funkcím a podporu."
+
+#: tabs/dashboard.php:35
+msgid "License Email Address"
+msgstr "Licence e-mailová adresa"
+
+#: tabs/dashboard.php:43
+msgid "Content Types"
+msgstr "Typy obsahu"
+
+#: tabs/dashboard.php:79
+msgid ""
+"These are the types of content that you want to set HREFLANG Tags metaboxes "
+"for."
+msgstr ""
+"Toto jsou typy obsahu, který chcete nastavit značky HREFLANG metaboxes pro."
+
+#: tabs/dashboard.php:84
+msgid "Admin Bar Icon"
+msgstr "Admin Bar"
+
+#: tabs/dashboard.php:87
+msgid "Enable the admin bar icon."
+msgstr "Aktivace ikony admin bar."
+
+#: tabs/dashboard.php:87
+msgid "Recommended"
+msgstr "Doporučené"
+
+#: tabs/woocommerce.php:3
+msgid "WooCommerce Settings"
+msgstr "Nastavení e-knihkupectví"
+
+#: tabs/woocommerce.php:6
+msgid ""
+"These is where you can set your hreflang tags for your WooCommerce main shop "
+"page. This is generally the landing page for your WooCommerce powered shop."
+msgstr ""
+"Zde můžete nastavit značky hreflang pro hlavní stránku obchodu WooCommerce. "
+"To je obecně vstupní stránka vašeho obchodního domu s obchodem WooCommerce."
+
+#: tabs/woocommerce.php:9
+msgid "Here is the location of your shop page:"
+msgstr "Zde je umístění stránky blogu:"
+
+#: tabs/woocommerce.php:18
+msgid "Allow Shop Page Tags"
+msgstr "Povolit značky stránky stránky obchodu"
+
+#: tabs/woocommerce.php:23
+msgid "Enable hreflang tags on shop page."
+msgstr "Povolit značky hreflang na stránce obchodu."
+
+#: tabs/woocommerce.php:28
+msgid "Shop HREFLANG Tags"
+msgstr "Značky HREFLANG"
+
+#. Plugin URI of the plugin/theme
+msgid "http://dcgws.com/product/hreflang-tags-pro-plugin-wordpress/"
+msgstr "http://dcgws.com/product/hreflang-tags-pro-plugin-wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Smart implementation of HREFLANG meta tags into the head section of your "
+"WordPress site."
+msgstr ""
+"Chytrá implementace HREFLANG meta tagů do sekce head vašeho webu WordPress."
+
+#. Author of the plugin/theme
+msgid "DCGWS Internet Solutions"
+msgstr "DCGWS Internet Solutions"
+
+#. Author URI of the plugin/theme
+msgid "http://dcgws.com"
+msgstr "http://dcgws.com"
+
+#~ msgid "Generator"
+#~ msgstr "Generátor"
+
+#~ msgid "Bulk Editor"
+#~ msgstr "Hromadná editace"
+
+#~ msgid "http://dcgws.com/resources/plugins-software/hreflang-tags-pro/"
+#~ msgstr "http://dcgws.com/resources/plugins-software/hreflang-tags-pro/"

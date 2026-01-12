@@ -1,0 +1,199 @@
+/* HREFLANG Taxonomy UI Improvements */
+
+.hreflang-taxonomy-container {
+	max-width: 800px;
+	margin: 20px 0;
+}
+
+.hreflang-taxonomy-header {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #2271b1;
+}
+
+.hreflang-taxonomy-header h3 {
+	margin: 0;
+	font-size: 16px;
+	color: #1d2327;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.hreflang-taxonomy-header h3::before {
+	content: "\f326";
+	font-family: dashicons;
+	font-size: 20px;
+	color: #2271b1;
+}
+
+.hreflang-entry {
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 15px;
+	margin-bottom: 12px;
+	transition: all 0.2s ease;
+}
+
+.hreflang-entry:hover {
+	background: #fff;
+	border-color: #2271b1;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.hreflang-entry-fields {
+	display: grid;
+	grid-template-columns: 2fr 1.5fr 1.5fr auto;
+	gap: 12px;
+	align-items: end;
+}
+
+.hreflang-field {
+	display: flex;
+	flex-direction: column;
+}
+
+.hreflang-field label {
+	font-weight: 600;
+	margin-bottom: 5px;
+	font-size: 13px;
+	color: #1d2327;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+.hreflang-field label::before {
+	font-family: dashicons;
+	font-size: 16px;
+	color: #2271b1;
+}
+
+.hreflang-field.field-url label::before {
+	content: "\f103";
+}
+
+.hreflang-field.field-lang label::before {
+	content: "\f326";
+}
+
+.hreflang-field.field-region label::before {
+	content: "\f319";
+}
+
+.hreflang-field input[type="text"],
+.hreflang-field select {
+	width: 100%;
+	padding: 6px 10px;
+	border: 1px solid #8c8f94;
+	border-radius: 3px;
+	font-size: 14px;
+	transition: border-color 0.2s;
+}
+
+.hreflang-field input[type="text"]:focus,
+.hreflang-field select:focus {
+	border-color: #2271b1;
+	outline: none;
+	box-shadow: 0 0 0 1px #2271b1;
+}
+
+.hreflang-actions {
+	display: flex;
+	gap: 6px;
+	align-items: flex-end;
+}
+
+.hreflang-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	border: 1px solid #2271b1;
+	background: #2271b1;
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.2s;
+	padding: 0;
+}
+
+.hreflang-btn:hover {
+	background: #135e96;
+	border-color: #135e96;
+	transform: translateY(-1px);
+}
+
+.hreflang-btn.btn-remove {
+	background: #fff;
+	color: #d63638;
+	border-color: #d63638;
+}
+
+.hreflang-btn.btn-remove:hover {
+	background: #d63638;
+	color: #fff;
+}
+
+.hreflang-btn .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+.hreflang-add-container {
+	margin-top: 10px;
+}
+
+.hreflang-btn-add-new {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 16px;
+	background: #2271b1;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 500;
+	transition: all 0.2s;
+}
+
+.hreflang-btn-add-new:hover {
+	background: #135e96;
+	transform: translateY(-1px);
+}
+
+.hreflang-btn-add-new .dashicons {
+	font-size: 18px;
+	width: 18px;
+	height: 18px;
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+	.hreflang-entry-fields {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	
+	.hreflang-actions {
+		justify-content: flex-start;
+		margin-top: 5px;
+	}
+}
+
+/* Category edit form specific */
+tr.term-hreflang-wrap th {
+	padding-top: 20px;
+	vertical-align: top;
+}
+
+tr.term-hreflang-wrap td {
+	padding-top: 15px;
+}

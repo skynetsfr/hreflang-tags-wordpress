@@ -1,0 +1,655 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: HREFLANG Tags Pro\n"
+"POT-Creation-Date: 2018-08-23 17:56+0800\n"
+"PO-Revision-Date: 2018-08-23 18:02+0800\n"
+"Last-Translator: David Robert Davis, Jr <david.davis@dcgws.com>\n"
+"Language-Team: David Robert Davis, Jr <david.davis@dcgws.com>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: hreflang-tags-pro.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-bulk-list-table.php:142
+#: includes/class-validator-table.php:142
+msgid "You are not allowed to access this page."
+msgstr ""
+"Non ti è permesso visualizzare questa pagina attualmente: registrati o "
+"effettua il login."
+
+#: includes/class-bulk-list-table.php:185
+msgid "Master Template"
+msgstr "Maestro Template"
+
+#: includes/class-bulk-list-table.php:186
+msgid ""
+"This is a very powerful tool which should only be used if you are certain of "
+"what you want to do. This can and will completely overwrrite your previous "
+"hreflang tags for these posts. Use extreme care when appyling and saving."
+msgstr ""
+"Si tratta di uno strumento molto potente che deve essere utilizzato solo se "
+"si è certi di ciò che si vuole fare. Questo può essere e sarà completamente "
+"overwrrite il tuo precedente tag hreflang per questi posti. Prestare estrema "
+"attenzione quando perfettametne e risparmio."
+
+#: includes/class-bulk-list-table.php:187
+msgid ""
+"You may use the template tag <code>{get_permalink}</code> for the "
+"Alternative URL to set a default for each page/post."
+msgstr ""
+"Si può utilizzare il tag modello <code>{get_permalink}</code> per l'URL "
+"alternativi impostare un valore predefinito per ogni pagina/post."
+
+#: includes/class-bulk-list-table.php:188
+msgid ""
+"You may also use the following template tags <code>{scheme},{host},{slug}</"
+"code> for the Alternative URL to set a default for each page/post. I.e. If "
+"you enter in the master template box the following: <br><code>{scheme}://"
+"{host}/es{slug}</code> then <code>http://www.example.com/cars</code> becomes "
+"<code>http://www.example.com/es/cars</code>. These options cannot be used "
+"with <code>{get_permalink}</code>, rather the template tag used refers to "
+"the URL permalink's component.<br><br><p>Notes:</p><ul><li><code>{slug}</"
+"code> will always contain the beginning and trailing slashes.</"
+"li><li><code>{host}</code> Never contains a trailing slash, but alwsys "
+"contains the current domain name and top-level domain, like .com, .org, .es, "
+"etc. If you want to reference a different domain or tld, you must manually "
+"enter it. I.e. If your default site is <code>http://example.com/cars</code> "
+"and your Spanish site is <code>http://ejemplo.es/cars</code>, then you would "
+"enter: <code>{scheme}://ejemplo.es{slug}</code></li><li><code>{scheme}</"
+"code> If you do not add a scheme, we will add <code>http</code> as the "
+"default value.</li></ul><br><br><strong>CAUTION: Please use these tags "
+"carefully, as they will replace your existing alternative URLs. You can set "
+"the Screen Options to 1 in order to test your settings without changing "
+"multiple posts/pages.</strong>"
+msgstr ""
+"Puoi inoltre utilizzare i seguenti tag modello <code> {scheme}, {host}, "
+"{slug} </code> per l'URL alternativo per impostare un valore predefinito per "
+"ogni pagina / post. Cioè Se inserisci nella casella modello principale "
+"quanto segue: <br> <code> {scheme}: // {host} / es {slug} </code> then "
+"<code> http://www.example.com/cars </code> diventa <code> http://www.example."
+"com/es/cars </code>. Queste opzioni non possono essere usate con <code> "
+"{get_permalink} </code>, piuttosto il tag template usato si riferisce al "
+"componente permalink dell'URL. <br> <br> <p> Note: </ p> <ul> <li> <code> "
+"{slug} </code> conterrà sempre le barre iniziali e finali. </li> <li> <code> "
+"{host} </code> Non contiene mai una barra finale, ma alwsys contiene il nome "
+"di dominio corrente e dominio di primo livello, come .com, .org, .es, ecc. "
+"Se si desidera fare riferimento a un dominio diverso o tld, è necessario "
+"immetterlo manualmente. Cioè Se il tuo sito predefinito è <code> http://"
+"example.com/cars </code> e il tuo sito spagnolo è <code> http://ejemplo.es/"
+"cars </code>, devi inserire: <code > {scheme}: //ejemplo.es {slug} </code> "
+"</ li> <li> <code> {scheme} </code> Se non aggiungi uno schema, aggiungeremo "
+"<code> http </code> come valore predefinito. </li> </ul> <br> <br> <strong> "
+"ATTENZIONE: utilizzare questi tag attentamente, poiché sostituiranno gli URL "
+"alternativi esistenti. Puoi impostare le Opzioni schermo su 1 per testare le "
+"tue impostazioni senza modificare più post / pagine. </strong>"
+
+#: includes/class-bulk-list-table.php:189
+msgid "Apply to All"
+msgstr "Applica a tutto"
+
+#: includes/class-bulk-list-table.php:190
+msgid "Save All"
+msgstr "Salva tutto"
+
+#: includes/class-bulk-list-table.php:191
+msgid "Delete All"
+msgstr "Cancella tutto"
+
+#: includes/class-bulk-list-table.php:194
+#: includes/class-bulk-list-table.php:790
+#: includes/class-bulk-list-table.php:810
+#: includes/class-validator-table.php:852 includes/functions.php:460
+#: includes/functions.php:481 includes/functions.php:519
+#: includes/functions.php:556 includes/functions.php:581
+#: includes/functions.php:647 includes/functions.php:673
+#: includes/functions.php:689 includes/functions.php:718
+#: includes/functions.php:734
+msgid "Alternative URL"
+msgstr "URL alternativo:"
+
+#: includes/class-bulk-list-table.php:196
+#: includes/class-bulk-list-table.php:792
+#: includes/class-bulk-list-table.php:812
+#: includes/class-validator-table.php:853 includes/functions.php:462
+#: includes/functions.php:483 includes/functions.php:521
+#: includes/functions.php:558 includes/functions.php:583
+#: includes/functions.php:649 includes/functions.php:675
+#: includes/functions.php:691 includes/functions.php:720
+#: includes/functions.php:736
+msgid "Language"
+msgstr "Lingue"
+
+#: includes/class-bulk-list-table.php:363
+#: includes/class-validator-table.php:366
+#, php-format
+msgctxt "posts"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "Tutti <span class=\"count\">(%s)</span>"
+msgstr[1] "Tutti <span class=\"count\">(%s)</span>"
+
+#: includes/class-bulk-list-table.php:406
+#: includes/class-validator-table.php:409
+#, php-format
+msgctxt "posts"
+msgid "Trash <span class=\"count\">(%s)</span>"
+msgid_plural "Trash <span class=\"count\">(%s)</span>"
+msgstr[0] "Trash <span class=\"count\">(%s)</span>"
+msgstr[1] "Trash <span class=\"count\">(%s)</span>"
+
+#: includes/class-bulk-list-table.php:456
+#: includes/class-validator-table.php:459
+msgid "Filter"
+msgstr "Filtra"
+
+#: includes/class-bulk-list-table.php:877
+#: includes/class-validator-table.php:927
+msgid "Edit this item"
+msgstr "Modifica questo articolo"
+
+#: includes/class-bulk-list-table.php:877
+#: includes/class-validator-table.php:927
+msgid "Edit"
+msgstr "Modifica"
+
+#: includes/class-bulk-list-table.php:883
+#: includes/class-validator-table.php:933
+#, php-format
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Anteprima &#8220;%s&#8221;"
+
+#: includes/class-bulk-list-table.php:883
+#: includes/class-validator-table.php:933
+msgid "Preview"
+msgstr "Anteprima"
+
+#: includes/class-bulk-list-table.php:887
+#: includes/class-validator-table.php:937
+#, php-format
+msgid "View &#8220;%s&#8221;"
+msgstr "Visualizzazioni &#8220;%s&#8221;"
+
+#: includes/class-bulk-list-table.php:887
+#: includes/class-validator-table.php:937
+msgid "View"
+msgstr "Vedi"
+
+#: includes/class-bulk-list-table.php:1049
+#: includes/class-validator-table.php:1099
+msgid "WP Page Title"
+msgstr "Titolo della pagina"
+
+#: includes/class-bulk-list-table.php:1050
+#: includes/class-validator-table.php:1100
+msgid "Post Type"
+msgstr "Tipo di post"
+
+#: includes/class-bulk-list-table.php:1051
+#: includes/class-validator-table.php:1101
+msgid "Post Status"
+msgstr "Stato del post"
+
+#: includes/class-bulk-list-table.php:1052
+#: includes/class-validator-table.php:1102
+msgid "Publication date"
+msgstr "Data di pubblicazione"
+
+#: includes/class-bulk-list-table.php:1053
+#: includes/class-validator-table.php:1103
+msgid "Page URL/Slug"
+msgstr "URL alternativo:"
+
+#: includes/class-bulk-list-table.php:1058
+msgid "Action"
+msgstr "Azione"
+
+#: includes/class-validator-table.php:185
+msgid "Validation Guide"
+msgstr "Strumento di convalida"
+
+#: includes/class-validator-table.php:186
+msgid "Error Messages Legend"
+msgstr "Messaggi di errore"
+
+#: includes/class-validator-table.php:188
+msgid "The required DOMDocument class is not available on this server."
+msgstr "La classe DOMDocument richiesta non è disponibile su questo server."
+
+#: includes/class-validator-table.php:189
+msgid ""
+"Problem: Unfortunately, your server does not have the correct PHP modules to "
+"take advantage of our validation tool."
+msgstr ""
+"Problema: sfortunatamente, il tuo server non ha i moduli PHP corretti per "
+"sfruttare il nostro strumento di convalida."
+
+#: includes/class-validator-table.php:190
+msgid ""
+"Possible Solution: Contact your hosting company and ask them to compile PHP "
+"with the DOM extension enabled."
+msgstr ""
+"Soluzione possibile: contatta la tua società di hosting e chiedi loro di "
+"compilare PHP con l'estensione DOM abilitata."
+
+#: includes/class-validator-table.php:192
+msgid "Problem: The Alternative URL cannot be found as indicated."
+msgstr "Problema: l'URL alternativo non può essere trovato come indicato."
+
+#: includes/class-validator-table.php:193
+msgid ""
+"Possible Solution: Please correct any typos and double check that your "
+"alternative url exists and is not set to Draft or Private."
+msgstr ""
+"Soluzione possibile: correggere eventuali errori di battitura e controllare "
+"che l'URL alternativo esista e non sia impostato su Bozza o Privato."
+
+#: includes/class-validator-table.php:195
+msgid ""
+"Problem: The Alternative URL entered is no the final destination of the "
+"page. It is redirecting to another page."
+msgstr ""
+"Problema: l'URL alternativo inserito non è la destinazione finale della "
+"pagina. Sta reindirizzando verso un'altra pagina."
+
+#: includes/class-validator-table.php:196
+msgid ""
+"Possible Solution: Please correct any typos and double check that your "
+"alternative is not set to redirect. Even a redirect of non-www to www can "
+"cause this error to appear."
+msgstr ""
+"Soluzione possibile: correggere eventuali refusi e verificare che "
+"l'alternativa non sia impostata per il reindirizzamento. Anche un "
+"reindirizzamento di non www a www può far apparire questo errore."
+
+#: includes/class-validator-table.php:198
+msgid ""
+"Problem: This happens when a page includes a hreflang link to an alternate "
+"language, but the linked page doesn't link back to it."
+msgstr ""
+"Problema: questo accade quando una pagina include un link hreflang a una "
+"lingua alternativa, ma la pagina collegata non si ricollega ad essa."
+
+#: includes/class-validator-table.php:198
+msgid ""
+"This <a target=\"_blank\" href=\"https://webmasters.googleblog.com/2014/07/"
+"troubleshooting-hreflang-annotations-in.html\">Official Google Webmaster "
+"Central Blog</a> post explains that:<br><code>Annotations must be confirmed "
+"from the pages they are pointing to. If page A links to page B, page B must "
+"link back to page A, otherwise the annotations may not be interpreted "
+"correctly."
+msgstr ""
+"Questo post <a target=\"_blank\" href=\"https://webmasters.googleblog."
+"com/2014/07/troubleshooting-hreflang-annotations-in.html\"> blog ufficiale "
+"di Google Webmaster Central Blog </a> spiega che: < br> <code> Le "
+"annotazioni devono essere confermate dalle pagine a cui stanno puntando. Se "
+"la pagina A si collega alla pagina B, la pagina B deve ricollegarsi alla "
+"pagina A, altrimenti le annotazioni potrebbero non essere interpretate "
+"correttamente."
+
+#: includes/class-validator-table.php:199
+msgid ""
+"Possible Solution: So if you have this error reported, you should edit the "
+"Alternative URL entry to ensure there's a hreflang link back to the matching "
+"originating URL."
+msgstr ""
+"Soluzione possibile: se hai segnalato questo errore, dovresti modificare la "
+"voce URL alternativo per assicurarti che ci sia un link hreflang all'URL di "
+"origine corrispondente."
+
+#: includes/class-validator-table.php:201
+msgid ""
+"Problem: This happens when a page includes a hreflang link to an alternate "
+"language, but the linked page doesn't contain any hreflang anotations."
+msgstr ""
+"Problema: questo accade quando una pagina include un link hreflang a una "
+"lingua alternativa, ma la pagina collegata non contiene alcuna annessione "
+"hreflang."
+
+#: includes/class-validator-table.php:202
+msgid ""
+"Possible Solution: So if you have this error reported, you should ensure "
+"that the pages referenced in the Alternative URL also contain hreflang tags."
+msgstr ""
+"Soluzione possibile: se hai segnalato questo errore, dovresti assicurarti "
+"che le pagine a cui fai riferimento nell'URL alternativo contengano anche "
+"tag hreflang."
+
+#: includes/class-validator-table.php:204
+msgid ""
+"If you have ensured that your hreflang tags are set up correctly and you are "
+"still receiving errors when trying to validate, please email us at <a href="
+"\"mailto:sales@dcgws.com\">sales@dcgws.com</a> or fill out the contact form "
+"<a target=\"_blank\" href=\"http://dcgws.com/contact/\">here</a> with "
+"details of the issues you are having."
+msgstr ""
+"Se hai assicurato che i tag hreflang siano impostati correttamente e "
+"continui a ricevere errori durante il tentativo di convalida, inviaci "
+"un'email all'indirizzo <a href=\"mailto:sales@dcgws.com\"> sales@dcgws.com </"
+"a> oppure compila il modulo di contatto <a target=\"_blank\" href=\"http://"
+"dcgws.com/contact/\"> qui </a> con i dettagli dei problemi che stai "
+"riscontrando."
+
+#: includes/class-validator-table.php:205
+msgid ""
+"If you need assistance setting up the hreflang tags on your site, you may "
+"purchase a few hours of assistance <a target=\"_blank\" href=\"http://dcgws."
+"com/product/hourly-rate-work/\">here</a>. Most sites can be set up by us in "
+"2 hours or less."
+msgstr ""
+"Se hai bisogno di assistenza per impostare i tag hreflang sul tuo sito, puoi "
+"acquistare alcune ore di assistenza <a target=\"_blank\" href=\"http://dcgws."
+"com/product/hourly-rate-work/\"> qui </a>. La maggior parte dei siti può "
+"essere configurata da noi in 2 ore o meno."
+
+#: includes/class-validator-table.php:206
+msgid ""
+"Note: While you are allowed to set Screen Options to any many pages per "
+"screen as you want, we do not recommend that you set them for more than 20 "
+"pages per screen. The functions used by this Validation tool are known to "
+"comsume a significant amount of PHP memory."
+msgstr ""
+"Nota: sebbene sia possibile impostare le Opzioni schermo su tutte le pagine "
+"per schermo che si desidera, non è consigliabile impostarle per più di 20 "
+"pagine per schermo. Le funzioni utilizzate da questo strumento di convalida "
+"sono note per registrare una quantità significativa di memoria PHP."
+
+#: includes/class-validator-table.php:854
+msgid "Validation Results"
+msgstr "Risultati convalida"
+
+#: includes/functions.php:434
+msgid "HTML Tag Language"
+msgstr "Linguaggio di Tag HTML"
+
+#: includes/functions.php:436 includes/functions.php:464
+#: includes/functions.php:485 includes/functions.php:523
+#: includes/functions.php:560 includes/functions.php:585
+#: includes/functions.php:651 includes/functions.php:677
+#: includes/functions.php:693 includes/functions.php:722
+#: includes/functions.php:738
+msgid "Select one"
+msgstr "Seleziona"
+
+#: includes/functions.php:445
+msgid ""
+"You can use this to set the &lt;html lang=\"\"&gt; attribute for improved "
+"SEO."
+msgstr ""
+"È possibile utilizzare questo per impostare il < html lang = \"\" > "
+"attributo per una migliore SEO."
+
+#: includes/functions.php:503
+msgid "Validate"
+msgstr "Convalida"
+
+#: includes/functions.php:517 includes/functions.php:544 panels/main.php:26
+#: screens/bulk-editor.php:22 screens/generator.php:22 screens/validator.php:22
+msgid "HREFLANG Tags"
+msgstr "Tags HREFLANG"
+
+#: includes/functions.php:660
+msgid "Generate Tags"
+msgstr "Generare i tag"
+
+#: includes/functions.php:1208
+msgid "Your HREFLANG Tags found on this post are not valid."
+msgstr "I tuoi Tag hreflang trovate su questa post non sono validi."
+
+#: includes/functions.php:1212
+msgid "Your HREFLANG Tags found on this post are valid."
+msgstr "I tuoi Tag hreflang trovati su questo post sono validi."
+
+#: includes/functions.php:1218
+msgid "No HREFLANG Tags found on this post."
+msgstr "HREFLANG Tag Lite"
+
+#: includes/functions.php:1221
+msgid "HREFLANG Tags Pro"
+msgstr "HREFLANG Tags Pro"
+
+#: includes/functions.php:1267
+msgid "WordPress Version"
+msgstr "Versione WordPress."
+
+#: includes/functions.php:1268
+msgid "Plugin Version"
+msgstr "Versione plugin"
+
+#: includes/functions.php:1269 tabs/dashboard.php:16
+msgid "License Key"
+msgstr "Chiave di licenza"
+
+#: includes/functions.php:1297
+msgid "<a href=\"%s\">Renew Now</a> and Save up to 50%"
+msgstr "<a href=\"%s\">Rinnova ora</a> e risparmia fino al 50%"
+
+#: includes/functions.php:1303
+msgid "<a href=\"%s\">Upgrade Now</a> and Save up to 50%"
+msgstr "<a href=\"%s\">Esegui l'upgrade ora</a> e risparmia fino al 50%"
+
+#: includes/functions.php:1305 includes/functions.php:1313
+msgid "License Status"
+msgstr "Stato della licenza"
+
+#: includes/functions.php:1306
+msgid "License Plan"
+msgstr "Piano di Licenza"
+
+#: includes/functions.php:1307
+msgid "License Expires"
+msgstr "La licenza scade"
+
+#: includes/functions.php:1308
+msgid "License Limit"
+msgstr "Limite di Licenza"
+
+#: includes/functions.php:1309
+msgid "License Usage"
+msgstr "Uso della Licenza"
+
+#: includes/functions.php:1310
+msgid "License Remaining"
+msgstr "Licenza Rimanente"
+
+#: includes/functions.php:1313
+#, php-format
+msgid ""
+"Invalid. Please visit <a href=\"%s\">our website</a> to choose a license "
+"plan best suited to your needs."
+msgstr ""
+"Non valido. Visita <a href=\"%s\">il nostro sito web</a> per scegliere un "
+"piano di licenza più adatto alle tue esigenze."
+
+#: includes/variables.php:46
+msgid ""
+"You need a valid license key to use the premium features of HREFLANG Tags. "
+"Please enter your license key <a href=\""
+msgstr ""
+"È necessario un codice di licenza valido per utilizzare le funzioni premium "
+"dei tag HREFLANG. Inserisci la tua chiave di licenza <a href=\""
+
+#: panels/main.php:32
+msgid "General Settings"
+msgstr "Impostazioni generali"
+
+#: panels/main.php:36
+msgid "Dashboard"
+msgstr "Riepilogo"
+
+#: panels/main.php:37
+msgid "Blog/Home"
+msgstr "Blog / Casa"
+
+#: panels/main.php:39
+msgid "WooCommerce/Shop"
+msgstr "Negozio WooCommerce"
+
+#: panels/main.php:77 screens/bulk-editor.php:62 screens/generator.php:35
+#: screens/validator.php:39
+msgid "Updates &amp; Licensing"
+msgstr "Aggiornamenti &amp; licenze"
+
+#: screens/bulk-editor.php:28
+msgid "HREFLANG Tags Bulk Editor"
+msgstr "Tag HREFLANG Bulk Editor"
+
+#: screens/generator.php:28
+msgid "HREFLANG Tag Generator for HTML sites"
+msgstr "Generatore di Tag HREFLANG per siti HTML"
+
+#: screens/validator.php:28
+msgid "HREFLANG Tags Validator"
+msgstr "Validatore tag HREFLANG"
+
+#: tabs/blog.php:3
+msgid "Blog Settings"
+msgstr "Impostazioni Blog"
+
+#: tabs/blog.php:7
+msgid ""
+"These is where you can set your hreflang tags for your blog page. This is "
+"the page where your posts are show in a list. For many, it is the homepage. "
+"For those with a static frontpage, it might be somewhere else."
+msgstr ""
+"Questi è dove è possibile impostare i tag hreflang per la vostra pagina del "
+"blog. Questa è la pagina in cui i tuoi post sono spettacolo in un elenco. "
+"Per molti, è la home page. Per quelli con un frontpage statica, potrebbe "
+"essere da qualche altra parte."
+
+#: tabs/blog.php:10
+msgid "Here is the location of your blog page:"
+msgstr "Ecco la posizione della vostra pagina del blog:"
+
+#: tabs/blog.php:19
+msgid "Allow Blog Page Tags"
+msgstr "Consentire Blog Pagina Tag"
+
+#: tabs/blog.php:24
+msgid "Enable hreflang tags on blog page."
+msgstr "Abilita tag hreflang sulla pagina del blog."
+
+#: tabs/blog.php:29
+msgid "Blog HREFLANG Tags"
+msgstr "HREFLANG Tag Lite"
+
+#: tabs/dashboard.php:22
+msgid "Valid Key : Your license key has been successfully validated."
+msgstr ""
+"Chiave valida: La tua chiave di licenza è stata convalidata con successo."
+
+#: tabs/dashboard.php:26
+msgid ""
+"Invalid or Expired Key : Please make sure you have entered the correct value "
+"and that your key is not expired."
+msgstr ""
+"Non valido o scaduto chiave: assicurarsi di avere immesso il valore corretto "
+"e che il codice non è scaduto."
+
+#: tabs/dashboard.php:30
+msgid "The license key is used for access to premium features and support."
+msgstr ""
+"La chiave di licenza viene utilizzata per accedere a funzioni premium e "
+"supporto."
+
+#: tabs/dashboard.php:35
+msgid "Content Types"
+msgstr "Tipi di contenuto"
+
+#: tabs/dashboard.php:71
+msgid ""
+"These are the types of content that you want to set HREFLANG Tags metaboxes "
+"for."
+msgstr ""
+"Questi sono i tipi di contenuto che si desidera impostare HREFLANG Tag "
+"metaboxes per."
+
+#: tabs/dashboard.php:76
+msgid "Admin Bar Icon"
+msgstr "Barra Admin"
+
+#: tabs/dashboard.php:79
+msgid "Enable the admin bar icon."
+msgstr "Attivare l'icona barra di amministrazione."
+
+#: tabs/dashboard.php:79
+msgid "Recommended"
+msgstr "Raccomandato"
+
+#: tabs/woocommerce.php:3
+msgid "WooCommerce Settings"
+msgstr "Impostazioni WooCommerce"
+
+#: tabs/woocommerce.php:6
+msgid ""
+"These is where you can set your hreflang tags for your WooCommerce main shop "
+"page. This is generally the landing page for your WooCommerce powered shop."
+msgstr ""
+"È qui che puoi impostare i tuoi tag hreflang per la tua pagina del negozio "
+"principale di WooCommerce. Questa è generalmente la pagina di destinazione "
+"per il tuo negozio di WooCommerce."
+
+#: tabs/woocommerce.php:9
+msgid "Here is the location of your shop page:"
+msgstr "Ecco la posizione della pagina del tuo negozio:"
+
+#: tabs/woocommerce.php:18
+msgid "Allow Shop Page Tags"
+msgstr "Consenti ai tag delle pagine del negozio"
+
+#: tabs/woocommerce.php:23
+msgid "Enable hreflang tags on shop page."
+msgstr "Abilita i tag hreflang nella pagina del negozio."
+
+#: tabs/woocommerce.php:28
+msgid "Shop HREFLANG Tags"
+msgstr "Acquista tag HREFLANG"
+
+#. Plugin Name of the plugin/theme
+#| msgid "HREFLANG Tags Pro"
+msgid "HREFLANG Tags for WordPress"
+msgstr "HREFLANG Tags for WordPress"
+
+#. Plugin URI of the plugin/theme
+#| msgid "http://dcgws.com/product/hreflang-tags-pro-plugin-wordpress/"
+msgid ""
+"https://www.hreflangtags.com/downloads/hreflang-tags-pro-plugin-wordpress/"
+msgstr ""
+"https://www.hreflangtags.com/downloads/hreflang-tags-pro-plugin-wordpress/"
+
+#. Description of the plugin/theme
+msgid ""
+"Smart implementation of HREFLANG meta tags into the head section of your "
+"WordPress site."
+msgstr ""
+"Implementazione intelligente di HREFLANG meta tag nella sezione head del "
+"vostro sito WordPress."
+
+#. Author of the plugin/theme
+msgid "DCGWS Internet Solutions"
+msgstr "DCGWS Internet Solutions"
+
+#. Author URI of the plugin/theme
+msgid "http://dcgws.com"
+msgstr "http://dcgws.com"
+
+#~ msgid "Generator"
+#~ msgstr "Generatore"
+
+#~ msgid "Bulk Editor"
+#~ msgstr "Editor di massa"
+
+#~ msgid "HREFLANG Tag Bulk Editor"
+#~ msgstr "HREFLANG Tag Editor di massa"
+
+#~ msgid "http://dcgws.com/resources/plugins-software/hreflang-tags-pro/"
+#~ msgstr "http://dcgws.com/resources/plugins-software/hreflang-tags-pro/"
