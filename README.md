@@ -149,7 +149,7 @@ This project is licensed under the GPL v2 or later - see the [LICENSE](LICENSE) 
 
 ## Credits
 
-Originally created by Vagary Digital. Now maintained and improved by [Skynets](https://github.com/skynets) as an open-source project.
+Originally created by Vagary Digital. Now maintained and improved by [Skynets](https://skynets.fr/) as an open-source project.
 
 ---
 
