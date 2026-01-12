@@ -63,6 +63,8 @@ function hreflang_pro_register_settings() {
 	register_setting( 'hreflang-settings-group', 'hreflang_pro_show_admin_bar');
 	register_setting( 'hreflang-blog-settings-group', 'hreflang_pro_allow_blog_tags');
 	register_setting( 'hreflang-blog-settings-group', 'hreflang_pro_blog_tags');
+	register_setting( 'hreflang-home-settings-group', 'hreflang_pro_allow_home_tags');
+	register_setting( 'hreflang-home-settings-group', 'hreflang_pro_home_tags');
 	register_setting( 'hreflang-shop-settings-group', 'hreflang_pro_allow_shop_tags');
 	register_setting( 'hreflang-shop-settings-group', 'hreflang_pro_shop_tags');
 	register_setting( 'hreflang-xml-sitemap-settings-group', 'hreflang_pro_enable_xml_sitemap');
@@ -763,6 +765,92 @@ function hreflang_pro_blog_tags() {
 		}
 		echo '</select>';
 		echo '<button class="add-new-blog-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-plus"></span></button>';
+		echo '</div>';
+	}
+	echo '</div>';
+}
+
+function hreflang_pro_home_tags() {
+	global $allregions,$langcode2Name;
+
+	$home_tags = get_option('hreflang_pro_home_tags');
+	echo '<div class="href-container-home">';
+	if (is_array($home_tags)) {
+		if (count($home_tags['href']) == 0) {
+			echo '<div id="hreflang-home-1" class="href-lang">';
+			echo '<label for="hreflang-href">'.__('Alternative URL','hreflang-tags-pro').'</label>';
+			echo '<input name="hreflang_pro_home_tags[href][]" class="hreflang-href" type="text" value="">';
+			echo '<label for="meta-box-dropdown">'.__('Language','hreflang-tags-pro').'</label>';
+			echo '<select name="hreflang_pro_home_tags[hreflang][]" class="hreflang-lang" class="hreflang-lang">';
+			echo '<option>'.__('Select one','hreflang-tags-by-dcgws').'</option>';
+			foreach ($langcode2Name as $language) {
+				echo '<option value="'.$language['code'].'">'.preg_replace("/\([^)]+\)/","",$language['name']).'</option>';
+			}
+			echo '</select>';
+			echo ' <label for="meta-box-dropdown">'.__('Region','hreflang-tags-pro').'</label> ';
+			echo '<select name="hreflang_pro_home_tags[hrefregion][]" class="hreflang-region" class="hreflang-region">';
+			echo '<option value="">'.__('No region/default','hreflang-tags-by-dcgws').'</option>';
+			foreach ($allregions as $region) {
+				echo '<option value="'.$region->alpha2Code.'">'.$region->name.'</option>';
+			}
+			echo '</select>';
+			echo '<button class="add-new-home-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-plus"></span></button>';
+			echo '</div>';
+		}
+		else {
+			for ($n = 0; $n < count($home_tags['href']); $n++) {
+				echo '<div id="hreflang-home-'.$n.'" class="href-lang">';
+				echo '<label for="hreflang-href">'.__('Alternative URL','hreflang-tags-pro').'</label>';
+				echo '<input name="hreflang_pro_home_tags[href][]" class="hreflang-href" type="text" value="'.$home_tags['href'][$n].'">';
+				echo '<label for="meta-box-dropdown">'.__('Language','hreflang-tags-pro').'</label>';
+				echo '<select name="hreflang_pro_home_tags[hreflang][]" class="hreflang-lang" class="hreflang-lang">';
+				echo '<option>'.__('Select one','hreflang-tags-by-dcgws').'</option>';
+				foreach ($langcode2Name as $language) {
+					echo '<option value="'.$language['code'].'"';
+					if ($language['code'] == $home_tags['hreflang'][$n]) {
+						 echo ' selected="selected"';
+					}
+					echo '>'.preg_replace("/\([^)]+\)/","",$language['name']).'</option>';
+				}
+				echo '</select>';
+				echo ' <label for="meta-box-dropdown">'.__('Region','hreflang-tags-pro').'</label> ';
+			echo '<select name="hreflang_pro_home_tags[hrefregion][]" class="hreflang-region">';
+				echo '<option value="" '.($home_tags['hrefregion'][$n] == '' ? 'selected="selected"' : '').'>'.__('No region/default','hreflang-tags-by-dcgws').'</option>';
+				foreach ($allregions as $region) {
+					echo '<option value="'.$region->alpha2Code.'"';
+					if ($region->alpha2Code == $home_tags['hrefregion'][$n]) {
+						 echo ' selected="selected"';
+					}
+					echo '>'.$region->name.'</option>';
+				}
+			echo '</select>';
+				if ( ($n+1) == count($home_tags['href'])) {
+					echo '<button class="add-new-home-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-plus"></span></button>';
+					echo '<button class="remove-new-home-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-minus"></span></button>';
+				}
+				echo '</div>';
+			}
+		}
+	}
+	else {
+		echo '<div id="hreflang-home-1" class="href-lang">';
+		echo '<label for="hreflang-href">'.__('Alternative URL','hreflang-tags-pro').'</label>';
+		echo '<input name="hreflang_pro_home_tags[href][]" class="hreflang-href" type="text" value="">';
+		echo '<label for="meta-box-dropdown">'.__('Language','hreflang-tags-pro').'</label>';
+		echo '<select name="hreflang_pro_home_tags[hreflang][]" class="hreflang-lang" class="hreflang-lang">';
+		echo '<option>'.__('Select one','hreflang-tags-by-dcgws').'</option>';
+		foreach ($langcode2Name as $language) {
+			echo '<option value="'.$language['code'].'">'.preg_replace("/\([^)]+\)/","",$language['name']).'</option>';
+		}
+		echo '</select>';
+		echo ' <label for="meta-box-dropdown">'.__('Region','hreflang-tags-pro').'</label> ';
+		echo '<select name="hreflang_pro_home_tags[hrefregion][]" class="hreflang-region" class="hreflang-region">';
+		echo '<option value="">'.__('No region/default','hreflang-tags-by-dcgws').'</option>';
+		foreach ($allregions as $region) {
+			echo '<option value="'.$region->alpha2Code.'">'.$region->name.'</option>';
+		}
+		echo '</select>';
+		echo '<button class="add-new-home-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-plus"></span></button>';
 		echo '</div>';
 	}
 	echo '</div>';
@@ -1581,242 +1669,7 @@ function hreflang_tags_pro_set_screen_option($status, $option, $value) {
 
 }
 //New added: 4/12/2017 end
-function hreflang_tags_pro_adminbar_validate_hreflang_tags($post) {
-	$data = array();
 
-	if (is_home()) {
-		$post = get_post(get_option('page_for_posts'));
-		$home_tags = get_option('hreflang_pro_blog_tags');
-		for($n = 0; $n < count($home_tags['href']); $n++) {
-			if ($home_tags['hrefregion'][$n] != '') {
-				$lang = $home_tags['hreflang'][$n].'_'.$home_tags['hrefregion'][$n];
-			}
-			else {
-				$lang = $home_tags['hreflang'][$n];
-			}
-			$url = $home_tags['href'][$n];
-			if (!class_exists('DOMDocument')) {
-				$data['result'] = 'fail';
-				$data['message'] = 'The required DOMDocument class is not available on this server.';
-			}
-			else {
-				$dom = new DOMDocument();
-				libxml_use_internal_errors(true);
-				@$dom->loadHTMLFile($url);
-				if (strpos($http_response_header[0], '404')) {
-					$data[$lang]['result'] = 'success';
-					$data[$lang]['validate'] = 'fail';
-					$data[$lang]['message'] = 'Missing. Header response 404.';
-				}
-				else if (strpos($http_response_header[0], '301')) {
-					$data[$lang]['result'] = 'success';
-					$data[$lang]['validate'] = 'fail';
-					$data[$lang]['message'] = 'Missing. Header response 301.';
-				}
-				else {
-					$xpath = new DomXpath($dom);
-					$hrefs = $xpath->query("//link[@hreflang]");
-					if ($hrefs->length > 0) {
-						$urls = array();
-						foreach ($hrefs as $href) {
-							$urls[] = $href->getAttribute('href');
-							$hreflangs[] = str_replace('-', '_', $href->getAttribute('hreflang'));
-						}
-						if (!in_array(get_permalink($post->ID), $urls)) {
-							$data[$lang]['result'] = 'success';
-							$data[$lang]['validate'] = 'fail';
-							$data[$lang]['message'] = 'No return tags found. <span class="dashicons dashicons-warning"></span> <a target="_blank" href="https://webmasters.googleblog.com/2014/07/troubleshooting-hreflang-annotations-in.html">How to fix</a>';
-						}
-						else {
-							$data[$lang]['result'] = 'success';
-							$data[$lang]['validate'] = 'pass';
-						}
-					}
-					else {
-						$data[$lang]['result'] = 'success';
-						$data[$lang]['validate'] = 'fail';
-						$data[$lang]['message'] = 'No hreflang tags found on target page. <span class="dashicons dashicons-warning"></span> <a target="_blank" href="https://webmasters.googleblog.com/2014/07/troubleshooting-hreflang-annotations-in.html">How to fix</a>';
-					}
-				}
-			}
-		}
-	}
-	elseif ( is_category() ) {
-		$post_meta = get_term_meta($post->term_id);
-		foreach($post_meta as $key=>$value ) {
-			if (stristr($key,'hreflang')) {
-				$key_array = explode('-',$key);
-				$lang = $key_array[1];
-				$url = $value[0];
-				if (!class_exists('DOMDocument')) {
-					$data['result'] = 'fail';
-					$data['message'] = 'The required DOMDocument class is not available on this server.';
-				}
-				else {
-					$dom = new DOMDocument();
-					libxml_use_internal_errors(true);
-					@$dom->loadHTMLFile($url);
-					if (strpos($http_response_header[0], '404')) {
-						$data[$lang]['result'] = 'success';
-						$data[$lang]['validate'] = 'fail';
-						$data[$lang]['message'] = 'Missing. Header response 404.';
-					}
-					else if (strpos($http_response_header[0], '301')) {
-						$data[$lang]['result'] = 'success';
-						$data[$lang]['validate'] = 'fail';
-						$data[$lang]['message'] = 'Missing. Header response 301.';
-					}
-					else {
-						$xpath = new DomXpath($dom);
-						$hrefs = $xpath->query("//link[@hreflang]");
-						if ($hrefs->length > 0) {
-							$urls = array();
-							foreach ($hrefs as $href) {
-								$urls[] = $href->getAttribute('href');
-								$hreflangs[] = str_replace('-', '_', $href->getAttribute('hreflang'));
-							}
-							if (!in_array(get_term_link($post->term_id), $urls)) {
-								$data[$lang]['result'] = 'success';
-								$data[$lang]['validate'] = 'fail';
-								$data[$lang]['message'] = 'No return tags found. <span class="dashicons dashicons-warning"></span> <a target="_blank" href="https://webmasters.googleblog.com/2014/07/troubleshooting-hreflang-annotations-in.html">How to fix</a>';
-							}
-							else {
-								$data[$lang]['result'] = 'success';
-								$data[$lang]['validate'] = 'pass';
-							}
-						}
-						else {
-							$data[$lang]['result'] = 'success';
-							$data[$lang]['validate'] = 'fail';
-							$data[$lang]['message'] = 'No hreflang tags found on target page. <span class="dashicons dashicons-warning"></span> <a target="_blank" href="https://webmasters.googleblog.com/2014/07/troubleshooting-hreflang-annotations-in.html">How to fix</a>';
-						}
-					}
-				}
-			}
-		}
-	}
-	else {
-		$post_meta = get_post_meta($post->ID);
-		foreach($post_meta as $key=>$value ) {
-			if (stristr($key,'hreflang')) {
-				$key_array = explode('-',$key);
-				$lang = $key_array[1];
-				$url = $value[0];
-				if (!class_exists('DOMDocument')) {
-					$data['result'] = 'fail';
-					$data['message'] = 'The required DOMDocument class is not available on this server.';
-				}
-				else {
-					$dom = new DOMDocument();
-					libxml_use_internal_errors(true);
-					@$dom->loadHTMLFile($url);
-					if (strpos($http_response_header[0], '404')) {
-						$data[$lang]['result'] = 'success';
-						$data[$lang]['validate'] = 'fail';
-						$data[$lang]['message'] = 'Missing. Header response 404.';
-					}
-					else if (strpos($http_response_header[0], '301')) {
-						$data[$lang]['result'] = 'success';
-						$data[$lang]['validate'] = 'fail';
-						$data[$lang]['message'] = 'Missing. Header response 301.';
-					}
-					else {
-						$xpath = new DomXpath($dom);
-						$hrefs = $xpath->query("//link[@hreflang]");
-						if ($hrefs->length > 0) {
-							$urls = array();
-							foreach ($hrefs as $href) {
-								$urls[] = $href->getAttribute('href');
-								$hreflangs[] = str_replace('-', '_', $href->getAttribute('hreflang'));
-							}
-							if (!in_array(get_permalink($post->ID), $urls)) {
-								$data[$lang]['result'] = 'success';
-								$data[$lang]['validate'] = 'fail';
-								$data[$lang]['message'] = 'No return tags found. <span class="dashicons dashicons-warning"></span> <a target="_blank" href="https://webmasters.googleblog.com/2014/07/troubleshooting-hreflang-annotations-in.html">How to fix</a>';
-							}
-							else {
-								$data[$lang]['result'] = 'success';
-								$data[$lang]['validate'] = 'pass';
-							}
-						}
-						else {
-							$data[$lang]['result'] = 'success';
-							$data[$lang]['validate'] = 'fail';
-							$data[$lang]['message'] = 'No hreflang tags found on target page. <span class="dashicons dashicons-warning"></span> <a target="_blank" href="https://webmasters.googleblog.com/2014/07/troubleshooting-hreflang-annotations-in.html">How to fix</a>';
-						}
-					}
-				}
-			}
-		}
-	}
-	return $data;
-}
-
-function hreflang_tags_pro_admin_bar() {
-	global $wp_admin_bar, $post;
-	$allowed_post_types = get_option('hreflang_post_types');
-
-	if ( ! current_user_can( 'edit_posts' ) ) {
-		return;
-	}
-
-	if ('1' !== get_option('hreflang_pro_show_admin_bar')) {
-		return;
-	}
-	$is_frontend = false;
-	$is_category = false;
-	$is_backend = false;
-	$is_home = false;
-	if ( is_singular() && isset($post) && is_object($post) && in_array($post->post_type,$allowed_post_types)) {
-		$is_frontend = true;
-	}
-
-	if ( is_category() && in_array('categories',$allowed_post_types) ) {
-		$is_category = true;
-		$post = get_queried_object();
-	}
-
-	if ( is_admin() && isset($post) && is_object($post) && in_array($post->post_type,$allowed_post_types)) {
-		$is_backend = true;
-	}
-
-	if ( is_home() && '1' == get_option('hreflang_pro_allow_blog_tags') ) {
-		$is_home = true;
-	}
-
-	$class = '';
-	if ($is_frontend || $is_category || $is_backend || $is_home) {
-		$result = hreflang_tags_pro_adminbar_validate_hreflang_tags($post);
-		echo '<script>console.log('.json_encode($result).');</script>';
-		if ( is_array($result) && !empty($result) ) {
-			foreach($result as $language) {
-				if ($language['validate'] == 'fail') {
-					$validation = 'class="hreflang-tags-pro adminbar-validation fail" title="'.__('Your HREFLANG Tags found on this post are not valid.','hreflang-tags-pro').'"';
-					break;
-				}
-				else {
-					$validation = 'class="hreflang-tags-pro adminbar-validation pass" title="'.__('Your HREFLANG Tags found on this post are valid.','hreflang-tags-pro').'"';
-					continue;
-				}
-			}
-		}
-		else {
-			$validation = 'class="hreflang-tags-pro adminbar-validation none" title="'.__('No HREFLANG Tags found on this post.','hreflang-tags-pro').'"';
-		}
-		$title = '<div id="hreflang-tags-pro-ab-icon" class="ab-item dashicons-translation">
-					  <div '.$validation.'><span class="screen-reader-text">' . __( 'HREFLANG Tags Pro', 'hreflang-tags-pro' ) . '</span>
-					  </div>
-				  </div>';
-
-		$args = array(
-			'id'    => 'hreflang-tags-pro-menu',
-			'title' => $title,
-			'href'  => admin_url().'admin.php?page=hreflang_pro&tab=hreflang_pro_dashboard',
-			'meta'  => array( 'class' => 'hreflang-tags-pro-ab' )
-		);
-		$wp_admin_bar->add_node( $args );
-	}
-}
 function hreflang_tags_pro_taxonomy_forms() {
 	if (is_array(get_option('hreflang_post_types'))) {
 		foreach(get_option('hreflang_post_types') as $type) {

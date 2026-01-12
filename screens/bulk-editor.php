@@ -60,12 +60,6 @@ if ( !is_admin() ) {
 				</div>
 				</form>
 				</div>
-		<div class="hreflang-content metabox-holder" id="hreflang-sidebar-content">
-			<div class="stuffbox">
-				<h3 class="hndle"><span><?php _e('Updates &amp; Licensing','hreflang-tags-pro'); ?></span></h3>
-				<div class="inside"><?php hreflang_tags_pro_parse_license_box(); ?></div>
-			</div>
-		</div>
 	</div>
 
 </div>

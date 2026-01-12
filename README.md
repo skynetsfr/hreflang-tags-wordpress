@@ -10,13 +10,13 @@ Smart implementation of HREFLANG meta tags into the head section of your WordPre
 
 - **Easy hreflang Management** - Add and manage hreflang tags directly from the WordPress post editor
 - **Bulk Editor** - Manage hreflang tags for multiple posts at once
-- **Taxonomy Support** - Add hreflang tags to categories, tags, and custom taxonomies
+- **Taxonomy Support** - Add hreflang tags to categories and custom taxonomies
 - **XML Sitemap** - Generate hreflang-enabled XML sitemaps
 - **Validator** - Built-in validation tool to check your hreflang implementation
 - **Tag Generator** - Generate hreflang HTML code snippets
 - **REST API Support** - Access and update hreflang data via WordPress REST API
 - **Security Hardened** - CSRF protection, input sanitization, and permission checks throughout
-- **Free & Open Source** - No license keys, no restrictions
+- **Free** - No license keys, no restrictions
 
 ## Installation
 
@@ -113,7 +113,6 @@ Authorization: Bearer {token}
 
 ## What's New in 2.0.0
 
-- **License System Removed** - No more license keys required
 - **Enhanced Security** - Complete security audit with CSRF protection and input sanitization
 - **REST API Support** - Full integration with WordPress REST API
 - **Improved Performance** - Optimized code and reduced overhead
@@ -151,19 +150,6 @@ This project is licensed under the GPL v2 or later - see the [LICENSE](LICENSE) 
 ## Credits
 
 Originally created by Vagary Digital. Now maintained and improved by [Skynets](https://github.com/skynets) as an open-source project.
-
-## Roadmap
-
-- [ ] WordPress.org plugin directory submission
-- [ ] Multisite support improvements
-- [ ] Integration with popular translation plugins (WPML, Polylang)
-- [ ] Enhanced validation with Google Search Console API
-- [ ] Automatic hreflang generation based on site structure
-- [ ] GUI improvements and modernization
-
-## Screenshots
-
-Coming soon! Check the [screenshots directory](screenshots/) for examples of the plugin in action.
 
 ---
 

@@ -109,6 +109,20 @@ jQuery(document).ready(function($){
 		var $klon = $div.remove();
 		$('<button class="add-new-blog-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-plus"></span></button> <button class="remove-new-blog-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-minus"></span></button>').clone(true).appendTo('#hreflang-blog-'+num);
 	});
+	$('body').on('click','.add-new-home-hreflang-tag',function(e) {
+		e.preventDefault;
+		var $div = $('div[id^="hreflang-home-"]:last');
+		var num = parseInt( $div.prop("id").match(/\d+/g), 10 ) +1;
+		var $klon = $div.clone(true).prop('id', 'hreflang-home-'+num ).appendTo('.href-container-home');
+		$('#hreflang-gen-'+(num-1)+' button').remove();
+	});
+	$('body').on('click','.remove-new-home-hreflang-tag',function(e) {
+		e.preventDefault;
+		var $div = $('div[id^="hreflang-home-"]:last');
+		var num = parseInt( $div.prop("id").match(/\d+/g), 10 ) -1;
+		var $klon = $div.remove();
+		$('<button class="add-new-home-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-plus"></span></button> <button class="remove-new-home-hreflang-tag" onClick="return false;"><span class="dashicons dashicons-minus"></span></button>').clone(true).appendTo('#hreflang-home-'+num);
+	});
 	$('body').on('click','.add-new-shop-hreflang-tag',function(e) {
 		e.preventDefault;
 		var $div = $('div[id^="hreflang-shop-"]:last');

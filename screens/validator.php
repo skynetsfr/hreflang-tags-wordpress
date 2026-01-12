@@ -25,17 +25,11 @@ if ( !is_admin() ) {
 	<h3><span><?php _e('HREFLANG Tags Validator', 'hreflang-tags-pro'); ?></span></h3>
 	<div class="hreflang-container">
 		<div class="hreflang-content" id="hreflang-main-content">
-			<?php 	
+			<?php
 		global $hreflanguages;
 		$hreflang_pro_validator_lt = new HREFLANG_PRO_Validator_Table();
 		$hreflang_pro_validator_lt->show_page();
  		?>
-		</div>
-		<div class="hreflang-content metabox-holder" id="hreflang-sidebar-content">
-			<div class="stuffbox">
-				<h3 class="hndle"><span><?php _e('Updates &amp; Licensing','hreflang-tags-pro'); ?></span></h3>
-				<div class="inside"><?php hreflang_tags_pro_parse_license_box(); ?></div>
-			</div>
 		</div>
 	</div>
 

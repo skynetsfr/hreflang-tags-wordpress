@@ -28,7 +28,6 @@ add_action( 'wp_ajax_hreflang_pro_delete_from_bulk_editor', 'hreflang_pro_delete
 add_action( 'wp_ajax_validate_hreflang_tags', 'validate_hreflang_tags' );
 add_action('load-hreflang-pro_page_hreflang_pro_bulk_editor', 'hreflang_tags_pro_bulk_editor_screen_options');
 add_action('load-hreflang-pro_page_hreflang_pro_validator', 'hreflang_tags_pro_validator_screen_options');
-add_action('admin_bar_menu','hreflang_tags_pro_admin_bar',999);
 add_action( 'plugins_loaded', 'hreflang_tags_pro_taxonomy_forms');
 add_action( 'admin_init' , 'hreflang_tags_pro_version_fix');
 add_action( 'wp_ajax_hreflang_pro_delete_entry_from_bulk_editor', 'hreflang_pro_delete_entry_from_bulk_editor' );

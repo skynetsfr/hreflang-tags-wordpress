@@ -44,14 +44,6 @@
             <?php _e('These are the types of content that you want to set HREFLANG Tags metaboxes for.','hreflang-tags-pro'); ?>
             </span></td>
         </tr>
-        <tr valign="top">
-          <th scope="row"> <label for="hreflang_pro_show_admin_bar">
-              <?php _e('Admin Bar Icon', 'hreflang-tags-pro'); ?>
-            </label>
-          </th>
-          <td><label><input type="checkbox" name="hreflang_pro_show_admin_bar" id="hreflang_pro_show_admin_bar" value="1" <?php if (get_option('hreflang_pro_show_admin_bar') == '1') { echo 'checked="checked"'; } ?>/><?php _e('Enable the admin bar icon.','hreflang-tags-pro'); ?> <em><?php _e('Recommended','hreflang-tags-pro'); ?></em></label>
-          </td>
-        </tr>
       </tbody>
     </table>
   </div>
