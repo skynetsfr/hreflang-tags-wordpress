@@ -40,7 +40,7 @@ This release marks the transition to a fully open-source, community-driven proje
 
 ### Changed
 - Authorship transferred to Skynets
-- Repository moved to github.com/skynets
+- Repository moved to github.com/skynetsfr
 - Support now via GitHub Issues
 - Simplified plugin architecture (merged main files)
 - Cleaned up variable definitions
@@ -59,5 +59,5 @@ Last version under original maintenance. See git history for details.
 
 ---
 
-[2.0.0]: https://github.com/skynets/hreflang-tags-for-wordpress/releases/tag/v2.0.0
-[1.9.13]: https://github.com/skynets/hreflang-tags-for-wordpress/releases/tag/v1.9.13
+[2.0.0]: https://github.com/skynetsfr/hreflang-tags-wordpress/releases/tag/v2.0.0
+[1.9.13]: https://github.com/skynetsfr/hreflang-tags-wordpress/releases/tag/v1.9.13

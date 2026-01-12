@@ -200,7 +200,7 @@ class HREFLANG_PRO_Validator_Table extends WP_List_Table {
               	<p><strong><?php _e('Problem: This happens when a page includes a hreflang link to an alternate language, but the linked page doesn\'t contain any hreflang anotations.','hreflang-tags-pro'); ?></strong></p>
               	<p><i><?php _e('Possible Solution: So if you have this error reported, you should ensure that the pages referenced in the Alternative URL also contain hreflang tags.','hreflang-tags-pro'); ?></i></p>
               </ol>
-              <h4><?php _e('If you have ensured that your hreflang tags are set up correctly and you are still receiving errors when trying to validate, please submit an issue on <a target="_blank" href="https://github.com/skynets/hreflang-tags-for-wordpress/issues">GitHub</a> with details of the issues you are having.','hreflang-tags-pro'); ?></h4>
+              <h4><?php _e('If you have ensured that your hreflang tags are set up correctly and you are still receiving errors when trying to validate, please submit an issue on <a target="_blank" href="https://github.com/skynetsfr/hreflang-tags-wordpress/issues">GitHub</a> with details of the issues you are having.','hreflang-tags-pro'); ?></h4>
               <p><strong><?php _e('Note: While you are allowed to set Screen Options to any many pages per screen as you want, we do not recommend that you set them for more than 20 pages per screen. The functions used by this Validation tool are known to comsume a significant amount of PHP memory.','hreflang-tags-pro'); ?></strong></p>
               </div>
 

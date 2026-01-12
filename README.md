@@ -22,7 +22,7 @@ Smart implementation of HREFLANG meta tags into the head section of your WordPre
 
 ### From GitHub
 
-1. Download the latest release from the [releases page](https://github.com/skynets/hreflang-tags-for-wordpress/releases)
+1. Download the latest release from the [releases page](https://github.com/skynetsfr/hreflang-tags-wordpress/releases)
 2. Upload the plugin folder to `/wp-content/plugins/`
 3. Activate the plugin through the 'Plugins' menu in WordPress
 4. Configure the plugin settings under the 'Hreflang Tags WP' menu
@@ -31,7 +31,7 @@ Smart implementation of HREFLANG meta tags into the head section of your WordPre
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/skynets/hreflang-tags-for-wordpress.git
+   git clone https://github.com/skynetsfr/hreflang-tags-wordpress.git
    ```
 2. Upload to your `/wp-content/plugins/` directory
 3. Activate the plugin in WordPress
@@ -140,9 +140,9 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for de
 
 ## Support
 
-- **Documentation**: Check this README and the [Wiki](https://github.com/skynets/hreflang-tags-for-wordpress/wiki)
-- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/skynets/hreflang-tags-for-wordpress/issues)
-- **Discussions**: Ask questions in [GitHub Discussions](https://github.com/skynets/hreflang-tags-for-wordpress/discussions)
+- **Documentation**: Check this README and the [Wiki](https://github.com/skynetsfr/hreflang-tags-wordpress/wiki)
+- **Issues**: Report bugs or request features via [GitHub Issues](https://github.com/skynetsfr/hreflang-tags-wordpress/issues)
+- **Discussions**: Ask questions in [GitHub Discussions](https://github.com/skynetsfr/hreflang-tags-wordpress/discussions)
 
 ## License
 

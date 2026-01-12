@@ -1,14 +1,14 @@
 <?php
 /*
 Plugin Name: Hreflang Tags WP
-Plugin URI: https://github.com/skynets/hreflang-tags-for-wordpress
+Plugin URI: https://github.com/skynetsfr/hreflang-tags-wordpress
 Description: Smart implementation of HREFLANG meta tags into the head section of your WordPress site.
 Version: 2.0.0
 Author: Skynets
-Author URI: https://github.com/skynets
+Author URI: https://github.com/skynetsfr
 License: GPLv2 or later
 Text Domain: hreflang-tags-pro
-GitHub Plugin URI: skynets/hreflang-tags-for-wordpress
+GitHub Plugin URI: skynetsfr/hreflang-tags-wordpress
 Domain Path: /languages
 
     Copyright 2018-2026  Skynets
@@ -40,7 +40,7 @@ define( 'HREFLANG_PRO_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'HREFLANG_PRO_PLUGIN_MAIN_PATH', plugin_dir_path( __FILE__ ) ); // Backward compatibility
 define( 'HREFLANG_PRO_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'PLUGIN_NAME', 'Hreflang Tags WP' );
-define( 'PLUGIN_URI', 'https://github.com/skynets/hreflang-tags-for-wordpress' );
+define( 'PLUGIN_URI', 'https://github.com/skynetsfr/hreflang-tags-wordpress' );
 
 // Load core files (order matters - functions must be loaded before variables)
 require_once HREFLANG_PRO_PLUGIN_DIR . 'includes/functions.php';
