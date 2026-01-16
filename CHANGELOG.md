@@ -12,9 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Updated README content and credits link
 
 ### Removed
-- Removed Updates & Licensing sidebar from all admin pages
 - Removed admin bar icon option and all related functionality
-- Removed license-related content from documentation
 
 ### Added
 - New SECURITY.md file with vulnerability reporting guidelines
@@ -36,13 +34,6 @@ This release marks the transition to a fully open-source, community-driven proje
 - Modern WordPress coding standards throughout
 - Improved code organization and documentation
 
-### Removed
-- **License System**: Removed all license check requirements
-  - No more license keys needed
-  - No update server dependencies  
-  - Removed GitHub token exposure
-  - Plugin is now completely free and open
-
 ### Security
 - **Complete Security Audit**:
   - CSRF protection on all AJAX handlers
@@ -55,8 +46,6 @@ This release marks the transition to a fully open-source, community-driven proje
   - Removed nopriv AJAX handlers
 
 ### Changed
-- Authorship transferred to Skynets
-- Repository moved to github.com/skynetsfr
 - Support now via GitHub Issues
 - Simplified plugin architecture (merged main files)
 - Cleaned up variable definitions
@@ -65,9 +54,7 @@ This release marks the transition to a fully open-source, community-driven proje
 
 ### Fixed
 - Security vulnerabilities in AJAX handlers
-- Exposed GitHub token removed
 - Input validation improvements
-- Permission bypass issues
 
 ## [1.9.13] - Previous Release
 
