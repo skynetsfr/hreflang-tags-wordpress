@@ -1029,6 +1029,22 @@ function hreflang_pro_register_rest_fields() {
 			),
 		)
 	);
+
+	// Custom REST route for term (category/taxonomy) hreflang
+	register_rest_route('hreflang-tags/v1', '/term/(?P<id>[\d]+)/hreflang', array(
+		array(
+			'methods'             => 'GET',
+			'callback'            => 'hreflang_pro_rest_get_term_hreflang',
+			'permission_callback' => function() { return current_user_can('manage_options'); },
+			'args'                => array('id' => array('validate_callback' => function($v) { return is_numeric($v); })),
+		),
+		array(
+			'methods'             => 'POST',
+			'callback'            => 'hreflang_pro_rest_update_term_hreflang',
+			'permission_callback' => function() { return current_user_can('manage_options'); },
+			'args'                => array('id' => array('validate_callback' => function($v) { return is_numeric($v); })),
+		),
+	));
 }
 
 /**
@@ -1159,6 +1175,50 @@ function hreflang_pro_rest_update_html_region($value, $object, $field_name) {
 	return true;
 }
 
+
+/**
+ * Get hreflang tags for a term via REST API
+ */
+function hreflang_pro_rest_get_term_hreflang($request) {
+	$term_id = (int) $request['id'];
+	$meta = get_term_meta($term_id);
+	$hreflang = array();
+	foreach ($meta as $key => $value) {
+		if (strpos($key, 'hreflang-') === 0) {
+			$hreflang[$key] = is_array($value) ? $value[0] : $value;
+		}
+	}
+	return rest_ensure_response($hreflang);
+}
+
+/**
+ * Update hreflang tags for a term via REST API
+ */
+function hreflang_pro_rest_update_term_hreflang($request) {
+	$term_id = (int) $request['id'];
+	$body    = $request->get_json_params();
+
+	if (!is_array($body)) {
+		return new WP_Error('invalid_data', 'Expected JSON object', array('status' => 400));
+	}
+
+	// Delete existing hreflang term meta
+	$existing = get_term_meta($term_id);
+	foreach ($existing as $key => $value) {
+		if (strpos($key, 'hreflang-') === 0) {
+			delete_term_meta($term_id, $key);
+		}
+	}
+
+	// Insert new hreflang data
+	foreach ($body as $key => $url) {
+		if (strpos($key, 'hreflang-') === 0 && !empty($url)) {
+			update_term_meta($term_id, sanitize_text_field($key), esc_url_raw($url));
+		}
+	}
+
+	return hreflang_pro_rest_get_term_hreflang($request);
+}
 
 function hreflang_pro_bulk_enqueue($hook) {
 	global $hreflang_pro_bulk_editor_page;
